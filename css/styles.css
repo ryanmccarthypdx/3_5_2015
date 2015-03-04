@@ -1,0 +1,22 @@
+h1 img {
+  max-width: 200px;
+}
+
+h1{
+  font-size: 86px;
+}
+h2{
+  text-align: center;
+}
+
+.carousel img {
+  max-width: 600px;
+  max-height: 600px;
+  margin: 0 auto;
+
+}
+
+.carousel {
+  width: 50%;
+  margin: 0 auto;
+}
