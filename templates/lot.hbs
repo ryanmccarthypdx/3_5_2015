@@ -1,1 +1,10 @@
-<h1> {{title}}</h1>
+<div class="jumbotron">
+  <h3> {{tagline}} </h3>
+  <h4> {{description}} </h4>
+  <img {{bind-attr src=this.liveImage }}>
+  {{#each organs}}
+    <p>Name:{{name}}</p>
+    <p>Price:{{price}}</p>
+    <p>Comments:{{comment}}</p>
+  {{/each}}
+</div>

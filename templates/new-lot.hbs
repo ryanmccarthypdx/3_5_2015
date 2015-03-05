@@ -9,16 +9,22 @@
     <div class="form-group">
       {{input value=liveImage placeholder="Enter a link to a photo of the lot while alive"}}
     </div>
-    <p>{{#link-to "new-organ" class="btn btn-success"}}Cut out a squishy thing?{{/link-to}}</p>
+    <button {{action "addOrganForm"}} class="btn btn-success">Cut out a squishy thing?</button>
     <button {{action "save"}} class="btn btn-danger">Harvest this <strike>person</strike> lot</button>
   </form>
 
   <h3>Organs</h3>
 
-  {{#each organs}}
+  {{#each organs itemController="organ"}}
+    {{input value=name placeholder="Name"}}
+    <label for="price">Starting bid:</label>
+    {{input value=price class="form-control"}}
+    <label for="comment">Organ Quality</label>
+    {{textarea value=comment class="form-control" rows="4"}}
   <p>
     {{name}}
     <button class="btn btn-xs btn-warning" {{action 'delete'}}>delete</button>
+    <button class="btn btn-primary" {{action "saveOrgan"}}>Add your organ</button>
   </p>
   {{/each}}
 

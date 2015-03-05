@@ -21,6 +21,11 @@ h2{
 
 }
 
+h3 {
+  color: green;
+  text-shadow: black 2px 2px 4px;
+}
+
 li{
   color: white;
 }

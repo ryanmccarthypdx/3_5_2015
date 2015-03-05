@@ -1,7 +1,7 @@
 OregonOrgans.NewOrganController = Ember.ObjectController.extend({
   needs: ['lot'],
   actions: {
-    save: function() {
+    saveOrgan: function() {
       var organ = this.get('model');
       organ.save();
 
