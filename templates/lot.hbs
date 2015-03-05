@@ -1,10 +1,12 @@
 <div class="jumbotron">
-  <h3> {{tagline}} </h3>
-  <h4> {{description}} </h4>
-  <img {{bind-attr src=this.liveImage }}>
-  {{#each organ in organs}}
-    <p>Name:{{organ.name}}</p>
-    <p>Price:{{organ.price}}</p>
-    <p>Comments:{{organ.comment}}</p>
-  {{/each}}
+  <div class="container">
+    <h3> {{tagline}} </h3>
+    <h4> {{description}} </h4>
+    <img {{bind-attr src=this.liveImage }}>
+    {{#each organ in organs}}
+      <p>Name: {{organ.name}}</p>
+      <p>Price: {{organ.price}}</p>
+      <p>Comments: {{organ.comment}}</p>
+    {{/each}}
+  </div>
 </div>

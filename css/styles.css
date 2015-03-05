@@ -10,6 +10,12 @@ h1 img {
   background: rgba(255,255,255,.6);
 }
 
+.jumbotron p {
+  size: 12px;
+  color: green;
+  text-shadow: black 1px 1px 1px;
+}
+
 h1{
   font-size: 86px;
   color: green;
