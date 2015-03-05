@@ -1,0 +1,38 @@
+
+<div class="row">
+  <div class="prev col-md-2">
+    <h3 ><a {{action "previous"}}>Previous</a></h3>
+  </div>
+  <div class="col-md-8">
+    <div class="caro">
+      {{#if storyZero}}
+        {{#link-to "dissedent"}}
+          <img src="css/dissedent.jpg">
+          <h2>She died from natural causes. We promise!</h2>
+          <p>*not an actual promise</p>
+        {{/link-to}}
+        {{else}}
+          {{#if storyOne}}
+            {{#link-to "triathlete"}}
+            <img src="css/triathlete.jpg">
+            <h2>Very Healthy! All organs are squishy</h2>
+            {{/link-to}}
+          {{else}}
+            {{#if storyTwo}}
+              {{#link-to "hitchhiker"}}
+              <img src="css/hitchhiker.jpg">
+              <h2>Bonus: May contain drugs!</h2>
+              {{/link-to}}
+            {{else}}
+              {{#link-to "mid-age-woman"}}
+              <img src="css/mid-age-woman.jpg">
+              <h2>100% certified vegan diet!</h2>
+              {{/link-to}}
+            {{/if}}
+          {{/if}}
+      {{/if}}
+    </div>
+  </div>
+  <div class="next col-md-2">
+    <h3> <a {{action "next"}}>Next</a></h3>
+  </div>

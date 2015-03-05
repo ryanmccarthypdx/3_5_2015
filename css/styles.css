@@ -1,12 +1,24 @@
+body {
+  background-image: url('ForestPark-2.jpg');
+}
+
 h1 img {
   max-width: 200px;
 }
 
 h1{
   font-size: 86px;
+  color: green;
+  text-shadow: black 2px 2px 2px;
 }
-h2{
-  text-align: center;
+
+.navbar {
+  background-color: rgba(255,255,255,.6);
+}
+
+.tagline {
+  margin-left: 72%;
+  margin-top: 16px;
 }
 
 .carousel img {
@@ -19,4 +31,12 @@ h2{
 .carousel {
   width: 50%;
   margin: 0 auto;
+}
+
+.lot-form input{
+  width: 400px;
+}
+
+.lot-form textarea{
+  width: 400px;
 }

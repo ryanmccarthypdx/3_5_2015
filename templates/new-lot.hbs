@@ -1,0 +1,12 @@
+<form class="lot-form">
+  <div class="form-group">
+    {{input value=tagline  placeholder="Enter the lot's tagline for the main carousel"}}
+  </div>
+  <div class="form-group">
+    {{textarea value=description  placeholder="Enter a description of the lot's state of health and how much of a fight they put up"}}
+  </div>
+  <div class="form-group">
+    {{input value=liveImage placeholder="Enter a link to a photo of the lot while alive"}}
+  </div>
+    <button {{action "save"}} class="btn btn-danger">Harvest this <strike>person</strike> lot</button>
+</form>
