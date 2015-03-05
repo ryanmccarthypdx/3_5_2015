@@ -6,6 +6,10 @@ h1 img {
   max-width: 200px;
 }
 
+.jumbotron {
+  background: rgba(255,255,255,.6);
+}
+
 h1{
   font-size: 86px;
   color: green;

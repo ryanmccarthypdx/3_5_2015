@@ -7,6 +7,9 @@ OregonOrgans.NewLotController = Ember.Controller.extend({
         liveImage: this.get('liveImage')
       });
       newLot.save();
+      this.set('tagline',null);
+      this.set('description',null);
+      this.set('liveImage',null);
       this.transitionToRoute('home');
     }
   }
