@@ -1,0 +1,26 @@
+<h2>New Organ</h2>
+
+<form>
+  <div class="form-group">
+    <label for="name">Organ type:</label>
+      <select id="name" class="ember-select">
+        <option value="heart" selected="selected">Heart</option>
+        <option value="liver">Liver</option>
+        <option value="lungs">Lungs</option>
+        <option value="kidney">Kidney</option>
+        <option value="eyes">Eyes</option>
+        <option value="skin">Skin</option>
+        <option value="teeth">Teeth</option>
+        <option value="soul">Soul</option>
+        <option value="bones">Bones</option>
+        <option value="nails">Toe Nails</option>
+        <option value="ears">Ears</option>
+        <option value="mystery">???</option>
+      </select>
+    <label for="price">Starting bid:</label>
+    {{input value=price id="price" class="form-control"}}
+    <label for="comment">Organ Quality</label>
+    {{textarea value=comment id="comment" class="form-control" rows="4"}}
+    <button class="btn btn-primary" {{action "save"}}>Add your organ</button>
+  </div>
+</form>

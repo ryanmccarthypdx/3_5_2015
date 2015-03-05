@@ -1,5 +1,5 @@
-<form class="lot-form">
-  <div class="jumbotron">
+<div class="jumbotron">
+  <form class="lot-form">
     <div class="form-group">
       {{input value=tagline  placeholder="Enter the lot's tagline for the main carousel"}}
     </div>
@@ -9,8 +9,20 @@
     <div class="form-group">
       {{input value=liveImage placeholder="Enter a link to a photo of the lot while alive"}}
     </div>
-      <button class="btn btn-success">Cut out a squishy thing?</button>
-      <button {{action "save"}} class="btn btn-danger">Harvest this <strike>person</strike> lot</button>
+    <p>{{#link-to "new-organ" class="btn btn-success"}}Cut out a squishy thing?{{/link-to}}</p>
+    <button {{action "save"}} class="btn btn-danger">Harvest this <strike>person</strike> lot</button>
+  </form>
 
-  </div>
-</form>
+  <h3>Organs</h3>
+
+  {{#each organs}}
+  <p>
+    {{name}}
+    <button class="btn btn-xs btn-warning" {{action 'delete'}}>delete</button>
+  </p>
+  {{/each}}
+
+
+  {{outlet}}
+
+</div>
